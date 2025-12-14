@@ -1,37 +1,38 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="script.js" defer type="module"></script>
-    <script src="utils.js" defer type="module"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Todo App</title>
-</head>
-<body>
-<header class="header">
-    <h1>ToDoApp</h1>
-</header>
-<main class="main">
-    <section class="add-input-container">
-        <input class="input add-todo-input" data-add-todo-input type="text" name="" id="" placeholder="add todo">
-        <button class="add-todo-btn" data-add-todo-btn>add todo</button>
-    </section>
-    <section class="todo-list-container" data-todo-container>
 
-    </section>
-</main>
-<template data-todo-template>
-    <div class="todo">
-        <input type="checkbox" class="todo-checkbox" data-todo-checkbox>
-        <div class="todo-info">
-            <p class="todo-text" data-todo-text>go to jym</p>
-            <span class="todo-creation-date" data-todo-date>03-10-24</span>
-        </div>
-        <button class="remove-todo-btn" remove-todo-btn>X</button>
-    </div>
-</template>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="script.js" defer type="module"></script>
+	<script src="utils.js" defer type="module"></script>
+	<link rel="stylesheet" href="styles.css">
+	<title>Todo App</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1>ToDoApp</h1>
+	</header>
+	<main class="main">
+		<section class="add-input-container">
+			<input class="input add-todo-input" data-add-todo-input type="text" name="" id="" placeholder="add todo">
+			<button class="add-todo-btn" data-add-todo-btn>add todo</button>
+		</section>
+		<section class="todo-list-container" data-todo-container></section>
+	</main>
+	<template data-todo-template>
+		<div class="todo">
+			<input type="checkbox" class="todo-checkbox" data-todo-checkbox>
+			<div class="todo-info">
+				<p class="todo-text" data-todo-text>go to jym</p>
+				<span class="todo-creation-date" data-todo-date>03-10-24</span>
+			</div>
+			<button class="remove-todo-btn" remove-todo-btn>X</button>
+		</div>
+	</template>
 </body>
+
 </html>
